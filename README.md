@@ -1,5 +1,5 @@
 # STSstep
-Sound Texture Synthesis w/ texture morphs/steps <br>
+Sound Texture Synthesis w/ texture morphs and steps <br>
 Writen by Richard McWalter <br>
 Link to paper: <br>
 
