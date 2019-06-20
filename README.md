@@ -8,3 +8,17 @@ This version of the sound texture synthesis toolbox is an adaptation/extention o
 Download the Sound Texture Synthesis step (STSstep) source code from github.  You will also need to download two other software packages.  The first is the optimizaiton minFunc package found here: https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html.  The other is the Large time-frequency analysis toolbox (LTFAT) that can be found here: http://ltfat.github.io
 
 The minFun should be placed in a main STSstep directory in a folder labelled "\_minFunc_2012" and the LTFAT should be placed the folder labelled "\_ltfat".
+
+The folders are as follows
+\_samples: contains the audio wave files you would like to use for the sound texture synthesis.
+\_stats: where the measured texture statistics are placed (correspond to the files in the \_samples directory).
+\_sts: functions for the sound texture synthesis toolbox.
+\_synths: where the synthetic sound texture audio wave files are saved.
+\_system: where the system configuration file is stored (e.g. filterbank parameters, sample frequencye etc...).
+
+In the main folder there are two files: STS_Slide.m and STS.m
+
+STS_Slide.m is the function that contains the main routine (iterative) to impose the texture statistics and generate teh synthetic texture.
+STS.m contains some configuration settings and calls the STS_Slide.m function.
+
+Questions: mcwalter@mit.edu
