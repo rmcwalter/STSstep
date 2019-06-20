@@ -92,7 +92,7 @@ for k = 1:length(a)
     
     stat_sc1 = Measure_Statistics(dey_sub,deym_sub,X,fcc,mfin);
 
-    if length(a) > 1
+    if k > 1
         disp([input(1:end-3) '_t' num2str(t) '_ss' num2str(ss) '_a' num2str(a(k),'%1.2f') '_morph.wav'])
         audiowrite(['_synths/' dirs '/' input(1:end-3) '_t' num2str(t) '_ss' num2str(ss) '_a1_' num2str(a(1),'%1.2f') '_a2_' num2str(a(2),'%1.2f') '_' num2str(round(mean(stat_sc1))) '_morph.wav'],y,fs);
     end
