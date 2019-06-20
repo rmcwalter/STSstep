@@ -21,7 +21,7 @@ function AudSys_Setup(mfb_spacing)
 % delete('_system/*.*')
 
 % System config
-fs = 44.1e3;                  % sample frequency
+fs = 20e3;                  % sample frequency
 
 f0 = 0.5;                     % modulation filterbank start frequency
 fs_d = 400;                 % downsampled cutoff frequency (mod filterbank upper cutoff)
