@@ -1,6 +1,6 @@
 function STS(k,dr)
 
-disp('STS_Slide_main')
+disp('STS_Step_main')
 
 %% start the ltfat toolbox
 warning off
@@ -28,17 +28,17 @@ if ~exist(['_stats/' input '.mat']), Meas_Stats_n_Save('no','x',input,mfb_mode);
 kp = 1; % target statistics between mean (0) and reference (1)
 ss = 0; % step position in time (s) from start
 t = 5; % synthesis signal duration (s)
-STS_Slide(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
+STS_Step(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
 
 % synthesize texture with statistics matched to mean (used in paper)
 % kp = 0; % target statistics between mean (0) and reference (1)
 % ss = 0; % step position in time (s) from start
 % t = 5; % synthesis signal duration (s)
-% STS_Slide(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
+% STS_Step(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
 
 % synthesize texture step from mean to reference at 2.5s of 5s sound
 % kp = [0 1]; % target statistics between mean (0) and reference (1)
 % ss = 2.5; % step position in time (s) from start
 % t = 5; % synthesis signal duration (s)
-% STS_Slide(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
+% STS_Step(input,5, ss,kp, 30, 30,dr,mfb_mode,[2 3 4 5 6],[1 2], 1);
 
