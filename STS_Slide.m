@@ -1,4 +1,4 @@
-function STS_Slide(input,t,ss,a,jend,SNR,dirs,mfb_mode,CFLAG,MFLAG,FConfig)
+function STS_Step(input,t,ss,a,jend,SNR,dirs,mfb_mode,CFLAG,MFLAG,FConfig)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STS_Bones2 is essential the main function for synthesizing sound textures.
