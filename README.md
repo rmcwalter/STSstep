@@ -22,3 +22,17 @@ STS_Slide.m is the function that contains the main routine (iterative) to impose
 STS.m contains some configuration settings and calls the STS_Slide.m function.
 
 Questions: mcwalter@mit.edu
+
+If you use the code, please cite:
+```
+@article{mcwalter2018adaptive,
+  title={Adaptive and selective time averaging of auditory scenes},
+  author={McWalter, Richard and McDermott, Josh H},
+  journal={Current Biology},
+  volume={28},
+  number={9},
+  pages={1405--1418},
+  year={2018},
+  publisher={Elsevier}
+}
+```
