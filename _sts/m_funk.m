@@ -29,5 +29,5 @@ if sum(FLAG == 1)
 end
 if sum(FLAG == 2)
     f = f + mC;
-    g = f + mCg;
+    g = g + mCg;
 end
