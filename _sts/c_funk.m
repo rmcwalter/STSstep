@@ -63,16 +63,6 @@ if sum(FLAG == 5)
     f = f + ks;
     g = g + ksg;
 end
-
-% if sum(FLAG == 5)
-%     ym = ufilterbank(y1,mfb,1);
-%     yv = std(y1,1)^2;
-%     ymp = 1/length(ym) * sum(ym.^2) / yv;
-%     mp_grad_temp = grad_mod_power_win(y1, mfb);
-%     mp_grad = - 2*(ones(length(y1),1)*(xmp - ymp)).*mp_grad_temp;
-%     f = f + sum((xmp - ymp).^2);
-%     g = g + sum(mp_grad,2);
-% end
 if sum(FLAG == 6)
     f = f + cC;
     g = g + cCg;
